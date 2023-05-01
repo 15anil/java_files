@@ -1,0 +1,10 @@
+//Cat class
+package Generics;
+
+public class Cat extends Animal {
+	public Cat() {
+		super();
+		System.out.println("This is a cat");
+	}
+
+}
