@@ -77,7 +77,8 @@ public class Student {
 		return "Student [id=" + id + ", name=" + name + ", problems_solved=" + problems_solved + ", grade=" + grade
 				+ "]";
 	}
-	
+
+
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -100,6 +101,8 @@ public class Student {
 		
 		//updating the grade
 		filtered.forEach(student -> student.setGrade(student.getGrade() + 0.5));
+		
+		filtered.forEach(stu -> System.out.println("updated grades: " + stu));
 		
 //		List<Student> sorted = my_students.stream()
 //	            .filter(student -> student.getProblems_solved() > 10)
